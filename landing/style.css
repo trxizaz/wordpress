@@ -1,0 +1,411 @@
+.testimonial-slider {
+    width: 60%;
+    margin: 0 auto;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* Previous CSS styles remain the same */
+
+.testimonial {
+    display: inline-block;
+    width: calc(50% - 20px); /* Adjust the box size for smaller screens */
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+
+}
+
+.testimonial img {
+    max-width: 100%; /* Ensure the image fits within the container */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    .testimonial-slider {
+        width: 50%;
+    }
+
+    .testimonial {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .testimonial-slider {
+        width: 100%;
+    }
+
+    .testimonial {
+        width: 94%;
+        margin-right: 0px;
+    }
+}
+    
+               .bottom-navigation {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff; /* White background color */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px; /* Adjust the height as needed */
+}
+
+.bottom-navigation a {
+    text-decoration: none;
+    color: #374550; /* Black icon color */
+    font-size: 20px; /* Icon size */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s ease; /* Add a transform animation */
+}
+
+.bottom-navigation i {
+    margin-bottom: 5px; /* Space between icon and label */
+}
+
+/* Decrease the font size of the labels */
+.bottom-navigation span {
+    font-size: 12px; /* Adjust the label font size as needed */
+}
+
+.bottom-navigation a:hover {
+    background-color: #eee; /* Hover background color */
+    transform: scale(1.2); /* Add a scaling effect on hover */
+}
+     
+          .colored-box { 
+          border-radius:10px;
+          background-color: #D1F3FF; 
+           margin: 10px; width: calc(100% - 20px);  padding: 20px; 
+            text-align: center; } .box-heading { font-size: 24px; color: black;  } .box-subheading { font-size: 18px; color: black; /* Text color */ margin-top: 10px; /* Adjust spacing between heading and subheading */ } .social-icons { margin-top: 20px; /* Adjust spacing between subheading and icons */ } 
+.social-icons a { text-decoration: none; color: #fff; /* Icon color */ margin: 0 10px; /* Adjust spacing between icons */ font-size: 24px; }
+   
+         .blue-button {
+         
+         margin:10px;
+         margin-top:20px;
+    background-color: #00AFF0;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+  
+         .faq-container {
+         width:100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* Style the FAQ items */
+.faq {
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.faq:hover {
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+}
+
+/* Style the FAQ question */
+.faq-question {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Style the eye icon */
+.eye-icon {
+    margin-right: 10px;
+}
+
+/* Initially hide FAQ answers */
+.faq-answer {
+    padding: 10px;
+    display: none;
+}
+
+/* Show FAQ answers with a smooth animation */
+.faq:hover .faq-answer {
+    display: block;
+    animation: fade-in 0.5s ease-in-out;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+   
+.bbt {
+  --width: 100px;
+  margin-left:14px;
+  margin-top:18px;
+  --timing: 2s;
+  border: 0;
+  width: var(--width);
+  padding-block: 1em;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1em;
+  background: rgb(64, 192, 87);
+  transition: all 0.2s;
+  border-radius: 3px;
+}
+
+.bbt:hover {
+  background-image: linear-gradient(to right, rgb(250, 82, 82), rgb(250, 82, 82) 16.65%, rgb(190, 75, 219) 16.65%, rgb(190, 75, 219) 33.3%, rgb(76, 110, 245) 33.3%, rgb(76, 110, 245) 49.95%, rgb(64, 192, 87) 49.95%, rgb(64, 192, 87) 66.6%, rgb(250, 176, 5) 66.6%, rgb(250, 176, 5) 83.25%, rgb(253, 126, 20) 83.25%, rgb(253, 126, 20) 100%, rgb(250, 82, 82) 100%);
+  animation: var(--timing) linear dance6123 infinite;
+  transform: scale(1.1) translateY(-1px);
+}
+
+@keyframes dance6123 {
+  to {
+    background-position: var(--width);
+  }
+}
+
+
+          
+        
+          
+          
+          .container9 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media screen and (min-width: 768px) {
+            .container9 {
+                flex-direction: row;
+                text-align: left;
+            }
+
+            .image {
+                margin-right: 10px;
+                width: 40%;
+            }
+
+            .container9 > div {
+                width: 60%;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .container9 > div {
+                text-align: left; /* Align text to the left on mobile devices */
+                margin-left: 200px; /* Add a left margin for mobile devices */
+            }
+        }
+       
+             
+       
+       .circle-container { display: flex; align-items: center; justify-content: center; margin: 20px; } .circle { width: 40px; height: 40px; border-radius: 50%; /* Ensures full circular shape */ display: flex; justify-content: center; align-items: center; position: relative; } .circle.red { background-color: #FDBE11; /* Red color */ } .circle.blue { background-color: #00AFF0; /* Blue color */ }.circle.green { background-color: #DE3061; /* Green color */ } .fa-icon { font-size: 25px; color: white; } .dashed-line { border-top: 3px dashed #bbb; width: 80px; /* Adjust the width to match your circles */ margin: 0 20; /* Adjust the margin for spacing between circles and lines */ }
+  
+       
+    
+    .word-gap-example2 {
+    word-spacing: 30px;}
+    
+    
+    .text{word-spacing: 10px;}
+    .rounded-box { width: 90%; max-width: 400px;
+                        margin: 0 auto; height: 100px; background: rgb(216,44,94);
+background: linear-gradient(90deg, rgba(216,44,94,1) 0%, rgba(222,70,113,1) 29%, rgba(222,70,113,1) 66%, rgba(216,44,94,1) 100%); /* Replace with your desired color */ border-radius: 10px; /* Adjust the border-radius to control the roundness of corners */ display: flex; justify-content: center; align-items: center; } .text { color: #ffffff; /* Text color */ font-size: 24px; /* Font size */ text-align: center; /* Center-align the text */ } @media (min-width: 768px) { .rounded-box { width: 90%; /* Change to 100% to make it full-screen width on desktop */ max-width: none; /* Remove the maximum width for desktop */ } }
+
+
+    
+   
+    
+    .word-gap-example {
+    word-spacing: 10px; /* Adjust the value to set the desired gap between words */
+}
+img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* CSS for desktop screens (greater than or equal to 768px) */
+        @media (min-width: 768px) {
+            img {
+                float: right; /* Float the image to the right on desktop screens */
+                margin-left: 10px; /* Add some space between the image and content */
+            }
+        }
+        
+        .container0 {
+    
+    
+      background: rgb(170,27,69);
+background: linear-gradient(90deg, rgba(170,27,69,1) 0%, rgba(222,48,97,1) 31%, rgba(222,48,97,1) 69%, rgba(175,29,71,1) 100%); /* Replace with your desired background color */
+      padding:7px; /* Add padding for spacing and rounded corners */
+      border-radius: 10px; /* Add rounded corners */
+      text-align: center; /* Center-align the content */
+      margin: 10px; /* Add margin around the container */
+    }
+
+    .text {
+    
+      margin: 0; /* Remove margin for the text */
+    }
+
+    .icon {
+      font-size: 34px; /* Adjust the icon size as needed */
+      margin: 0 22px; /* Add space between the icons */
+    }
+
+    .word-container {
+      display: flex;
+      justify-content: center; /* Center-align the words horizontally */
+      margin-top: 20px; /* Add space between icons and word rows */
+    }
+
+    .word {
+      margin: 0 23px; /* Add space between words */
+    }
+    .button-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 10px;
+        }
+
+        .btn {
+            background-color: #F1F5F4;
+            color: 374550;
+            padding: 10px 20px;
+            border: none;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .btn i {
+            margin-right: 5px;
+        }
+        *{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
